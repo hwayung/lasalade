@@ -1,0 +1,87 @@
+.footer {
+  text-align: center;
+  padding: rem(65) rem(30) rem(20) ;
+  background-color: rgba(190,164,46,0.6);
+  @include mq(md) {
+    padding: rem(65) rem(30) rem(56);
+  }
+  &__logo {
+    width: rem(465);
+    margin: 0 auto;
+  }
+  &__text {
+    @include mq(md) {
+    font-size: rem(14);
+    color: #ffffff;
+    line-height: 1.875;
+    letter-spacing: 0.1em;
+    margin-right: 18px;
+    }
+  }
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__list {
+    @include mq(md){
+    display: flex;
+    text-decoration:none;
+    transition:.5s;
+    align-items: center;
+   }
+  }
+  &__item a{
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+
+.icon {
+  &-instagram:before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Brands";
+    color: #ffffff;
+    content: '\f16d';
+    font-size:rem(21.15);
+  }
+  &-twitter:before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Brands";
+    color: #ffffff;
+    content: '\f099';
+    font-size:rem(21.15);
+  }
+  &-tiktok:before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Brands";
+    color: #ffffff;
+    content: '\e07b';
+    font-size:rem(21.15);
+  }
+}
+  
+
+
+
+
+.copyright {
+  margin-top: rem(30);
+  text-align: center;
+  font-size: rem(10);
+  font-family:"Libre Baskerville";
+  letter-spacing: 0.05em;
+  @include mq(md) {
+    margin-top: rem(34);
+    font-size: rem(12);
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-text;
+    &:hover {
+      text-decoration: none;
+      opacity: .8;
+    }
+  }
+}

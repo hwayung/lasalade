@@ -17,8 +17,8 @@
   <!-- ファビコン -->
   <link rel="icon" href="./assets/img/favicon.ico"/>
   <!-- css -->
-  <link rel="stylesheet" href="./assets/css/styles.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <!-- swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -32,5 +32,368 @@
 
 </head>
  <body>
-   <h1>おはよう</h1>
+  <div class="wrapper">
+   <div class="header">
+     <div class="header__logo">
+       <h1 class="logo">
+         <a href="#" class="logo__link">
+           <img class="logo__img" src="src/img/logoimage.png" alt="TFGardenSaladeのロゴ">
+         </a>
+       </h1>
+     </div>
+   </div>
+
+   <section class="mainview">
+     <div class="mainview__inner">
+       <div class="mainview__heading">
+         <div class="mainview__secondtitle">
+          La salade
+          <br>
+          C’est bon pour la santé 
+         </div>
+         <div class="mainview__title">
+          健康のためじゃない、
+          <p class="marque">
+          おいしいから食べたい
+          </p>
+          サラダ
+         </div>
+         <div class="mainview__subtitle">
+          C’est bon pour la vie
+         </div>
+       </div>
+     </div>
+    </section>
+
+    <span class="mainview__scroll">SCROLL</span> 
+    
+    <!---concept--->
+    <section class="concept">
+      <div class="frame-inner">
+        <h2 class="title">
+          <span class="title-number">01</span>
+          Concept
+        </h2>
+
+       
+        <div class="concept__body">
+    
+          <div class="cards cards-first">
+            <div class="card">
+              <div class="card__img-wrapper">
+                <img class="card__img" src="src/img/concept1.png" alt="Concept内容1">
+              </div>
+              
+                <div class="card__text">
+                  <p><span class=text-color>TF Garden Salada</span>の食材は全て産地を公表をしています。
+                  </p>
+                  <p>
+                  信頼できる農家さんから直接買い取り、
+                  </p>
+                  <p>
+                  その日採れたものをその日のうちに厨房へ。
+                  </p>
+              
+                </div>
+            </div>
+
+            <div class=concept__title>全ての食材が安心の<span class=text-color>国産</span></div>
+
+          
+          </div>
+
+          <div class="cards  cards-reverse">
+            <div class="card">
+              <div class="card__img-wrapper">
+                <img class="card__img" src="src/img/concept2.png" alt="Concept内容1">
+              </div>
+              
+                <div class="card__text card__text-reverse">
+                  <p>定番のメニューに加えてサラダのフルカスタムも可能。
+                  </p>
+                  <p>
+                    お好みの<span class=text-color>ベース×トッピング×ドレッシング</span>を選んで
+                  </p>
+                  <p>
+                    あなた好みにアレンジして。
+                  </p>
+              
+                </div>
+            </div>
+
+            <div class="concept__title-reverse">
+              <p>カスタム可能で</p>
+              <p>その組み合わせは全<span class="text-color">400</span>種類！
+              </p>
+              </div>
+
+          
+          </div>
+
+          <div class="cards cards-third">
+            <div class="card card-third">
+              <div class="card__img-wrapper card__img-bc">
+                <img class="card__img" src="src/img/training.png" alt="gym内容">
+              </div>
+
+              <div class="card__img-wrapper">
+                <img class="card__img" src="src/img/concept3.png" alt="Concept内容1">
+              </div>
+              
+                <div class="card__text card__text-third">
+                  <p>
+                    コンビニのサラダチキンに飽きたらこれ！
+                  </p>
+                  <p>
+                    <span class=text-color>一食でタンパク質20g</span>がとれるトレーニー向けのメニューもご用意してます
+                  </p>
+              
+                </div>
+               
+            </div>
+
+            <div class="concept__title concept__title-third"><span class=text-color>ジムのトレーナー監修</span>のメニュー</div>
+
+          
+          </div>
+    
+        </div>
+       
+      </div>
+      <!---/frame-inner-->
+    </section>
+
+    <!---menu-->
+    <section class="menu">
+      <h2 class="title title__menu">
+        <span class="title-number">02</span>
+        Menu
+      </h2>
+
+
+      <div class="menu__body">
+        <div class="menucard-wrapper">
+          <div class="menucard menucard-outside">
+            <div class="menucard__img-wrapper">
+              <img class="card__img" src="src/img/salada1.png" alt="menu内容1">
+            </div>
+            <div class="menucard__body">
+              <div class="menucard__title">La salade d’avocats</div>
+              <div class="menucard__price">
+                <p class="price-name">アボガドサラダ </p>
+                <span class="price"> ¥980</span>
+              </div>
+              <div class="menucard__text">
+                <p>フレッシュなアボカドを贅沢に使ったサラダ。良質なタンパク質が豊富な
+                  ひよこ豆に自家製ドレッシングを添えて。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menucard  menucard-outside">
+            <div class="menucard__img-wrapper">
+              <img class="card__img" src="src/img/salada2.png" alt="menu内容2">
+            </div>
+            <div class="menucard__body">
+              <div class="menucard__title">La Salade de poulet</div>
+              <div class="menucard__price">
+                <p class="price-name">チキンサラダ </p>
+                <span class="price">  ¥1,100</span>
+              </div>
+              <div class="menucard__text">
+                <p>良質な飼料のみで育てられた鶏肉とフレッシュなトマトとパプリカのサラダ。
+                  スーパーフードの松の実を添えて。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menucard  menucard-outside">
+            <div class="menucard__img-wrapper">
+              <img class="card__img" src="src/img/salada3.png" alt="menu内容3">
+            </div>
+            <div class="menucard__body">
+              <div class="menucard__title">La Salade composée aux fromages et 
+                basilic</div>
+              <div class="menucard__price">
+                <p class="price-name">カッテージチーズとバジルのサラダ </p>
+                <span class="price">  ¥1,100</span>
+              </div>
+              <div class="menucard__text">
+                <p>契約農家さんから毎日提供されている朝摘みバジルをふんだんに使った
+                  サラダです。</p>
+              </div>
+            </div>
+          </div>
+          <div class="menucard menucard__btn">
+            <a href="#" class="btn__menu">View More   ><span class="menu-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+            <p class="btn__text">Follow Instagram</p>
+          </div>
+         
+        </div>
+
+       </div>
+    </section>
+
+    <!--access-->
+    <section class="access">
+      
+        <h2 class="title title__access">
+          <span class="title-number">03</span>
+          Access
+        </h2>
+
+        <div class="access__img">
+          <img class="card__img card__img-access" src="src/img/accessimage.png" alt="accessimage">
+        </div>
+        
+        <div class="access__information">
+          <div class="access__information-text">
+            <div class="access__heading">
+              <p class="heading-primary__sub">INFORMATION</p>
+              <h2 class="heading-primary heading-primary__access">TF Garden Salad
+              </h2>
+            </div>
+          </div>
+          <div class="adress">
+            <div class="adress__title">TF Garden Salad</div>
+            <ul class="adress__list">
+              <li class="adress__item">
+                <div class="item__heading">ADDRESS</div>
+                <div class="item__body">〒100-6301<p class="item__adress">東京都渋谷区表参道10-20-20</p></div>
+              </li>
+              <li class="adress__item">
+                <div class="item__heading">TEL</div>
+                <div class="item__body">090-1234-8899</div>
+              </li>
+              <li class="adress__item">
+                <div class="item__heading">OPEN</div>
+                <div class="item__body">11：00〜20：00</div>
+              </li>
+              <li class="adress__item">
+                <div class="item__heading">CLOSE</div>
+                <div class="item__body">日曜日</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="mapframe">
+          <div class="access__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.099577938661!2d139.69940192391732!3d35.67023271359362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca182a31e0b%3A0x99d7a9865079f0a5!2z6KGo5Y-C6YGT44OS44Or44K6!5e0!3m2!1sja!2sjp!4v1626135934034!5m2!1sja!2sjp" width="953" height="423" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+      </div>
+    
+  
+    </section>
+
+    <!---contact-->
+    <section class="contact">
+      <div class="frame-inner">
+        <h2 class="title">
+          <span class="title-number">04</span>
+          Contact
+        </h2>
+        <div class="contact__body">
+         <div class="contact__img">
+            <img class="card__img" src="src/img/contactimage.png" alt="Contactイメージ">
+         </div>
+         <div class="contact__area">
+           <div class="forms">
+             <div class="form">               
+               <p class="form-title form-title-important">
+               <label for="name">お名前</label>
+               </p>
+               <span class="wpcf7-form-control-wrap text-920"><input type="text" name="text-920" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="例) 東京 花子"></span>
+             </div>
+
+             <div class="form">               
+              <p class="form-title">
+              <label for="tell">お電話番号</label>
+              </p>
+              <span class="wpcf7-form-control-wrap tel-151"><input type="tel" name="tel-151" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="例) 090-1234-5678"></span>
+            </div>
+
+            <div class="form">               
+                <p class="form-title form-title-important">
+                <label for="mailadress">メールアドレス</label>
+                </p>
+                <span class="wpcf7-form-control-wrap email-465"><input type="email" name="email-465" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="aaaa@exaple.com">
+                </span>
+              
+          </div>
+
+          <div class="form">               
+            <p class="form-title form-title-important">
+            <label for="mailadress">メールアドレス</label>
+            <span class="verification">(確認用)</span>
+            </p>
+            <span class="wpcf7-form-control-wrap email-465"><input type="email" name="email-465" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="aaaa@exaple.com">
+            </span>
+          
+      </div>
+
+        <div class="form">
+                <p class="form-title">
+                  <label for="message">お問い合わせ内容</label>
+                </p>
+                <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="45" rows="10" aria-required="true" aria-invalid="false" placeholder=""></textarea>
+                </span>
+        
+      </div>
+
+           </div>
+           <!---forms-->
+
+           <label class="checkbox">
+            <input type="checkbox" name="term" value="accept">
+            <span class="checkmark"></span>
+            <span class="privacy-text">
+            プライバシーポリシーに同意したことを確認します。
+            </span>
+          </label>
+          
+          <div class="btn">
+           <a href="#" class="btn-inside">メッセージを送信</a>
+          </div>
+           
+         </div>
+        </div>
+       <!--/contact__body-->
+       
+      </div>
+      <!---/frame-inner-->
+    </section>
+
+
+    <!--footer-->
+    <footer class="footer">
+      <div class="footer__logo">
+      
+          <a href="#" class="logo__link">
+            <img class="logo__img" src="src/img/logofooterimg.png" alt="TFGardenSaladeのロゴ">
+          </a>
+        
+      </div>
+      <nav class="footer-nav">
+       <p class=footer__text>SHARE</p>
+       <ul class="footer-nav__list">
+
+        <li class="footer-nav__item"><a href="#" target="_blank"><span class="icon-instagram"><i class="fa fa-twitter" aria-hidden="true"></i></span></a></li>
+
+         <li class="footer-nav__item"><a href="#" target="_blank"><span class="icon-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></span></a></li>
+
+
+         <li class="footer-nav__item"><a href="#" target="_blank"><span class="icon-tiktok"><i class="fa fa-twitter" aria-hidden="true"></i></span></a></li>
+      
+      
+       </ul>
+    
+      </nav>
+      <div class="copyright">
+       <a href="." class="copyright__link">&copy; 2021 TF Garden Salada</a>
+      </div>
+    </footer>
+
+  </div>
  </body>
+ </html>

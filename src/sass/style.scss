@@ -1,0 +1,13 @@
+@import "./function/**";
+@import "./setting/**";
+@import "./base/**";
+@import "./plugin/**";
+@import "./module/**";
+@import "./page/**";
+
+.test {
+  padding: 10px;
+  margin: 0 auto;
+  color: #f00;
+  background-color: #fff;
+}

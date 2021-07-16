@@ -1,0 +1,66 @@
+.title {
+  display:flex;
+  align-items: center;
+  font-size: rem(18);
+  position: relative;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-family: 'Libre Baskerville', sans-serif;
+  color: $color-text;
+  @include mq(md) {
+  font-size: rem(24);
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-family: 'Libre Baskerville', sans-serif;
+  }
+  &-number{
+    line-height: 1;
+    font-size: rem(18);
+    margin-right: rem(26);
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    font-family: 'Libre Baskerville', sans-serif;
+    @include mq(md) {
+    margin-right: rem(33);
+    display: flex;
+    align-items: center;
+    font-size: rem(26);
+    line-height: 1;
+    letter-spacing: 0.05em;
+    font-family: 'Libre Baskerville', sans-serif;
+    }
+  }
+  &-number::after {
+    display:block;
+    margin-left: rem(10);
+    width: rem(100);
+    height: 0;
+    content: "";
+    border-top:$color-line 1px solid;
+    margin: rem(17) 0 rem(17) rem(10);
+    @include mq(md) {
+    display:block;
+    margin-left: rem(10);
+    width: rem(589);
+    height: 0;
+    content: "";
+    border-top:$color-line 1px solid;
+    margin: rem(17) 0 rem(17) rem(10);
+    }
+  }
+  &__access {
+    padding-left: rem(20);
+    @include mq(md) {
+    padding-left:rem(105);
+    }
+  }
+  &__menu {
+    padding-left:rem(20);
+    @include mq(md){
+    padding-left:rem(105);
+  }
+  }
+}

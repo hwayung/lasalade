@@ -1,0 +1,14 @@
+.contact{
+    padding: rem(130) 0 0 0;
+    &__body{
+      padding: rem(143) 0 rem(145) 0;
+      display: flex;
+    }
+    &__img {
+      width: 35.131%;
+    }
+    &__area {
+      width: 43.45%;
+      margin-left: 168px;
+    }
+  }

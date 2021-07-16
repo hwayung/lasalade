@@ -1,0 +1,47 @@
+.forms {
+  margin-bottom: rem(22);
+}
+.form {
+  display: flex;
+  align-items: center;
+  color: $color-text;
+  margin-bottom: rem(21);
+  &-title {
+    width: 30.517%;
+   &-important {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+   }
+   &-important:before {
+     content: '＊';
+     position: absolute;
+     top:-9px;
+     left: -14px;
+     width: rem(7);
+     height: rem(7);
+     color: #7C222C;
+   }
+  }
+}
+
+.wpcf7-form-control-wrap {
+  width: 69.48%;
+  padding-top: rem(11);
+  padding-bottom: rem(10);
+  padding-left: rem(15);
+  border-radius: 3%;
+  border: none;
+  color: #A0A0A0;
+  border:rgba(123, 137, 91, 0.5) 1px solid;
+  font-size: 14px;
+  line-height: 2.5;
+  letter-spacing: 0.1em;
+}
+
+.your-message {
+  display: inline-block;
+}
+.verification{
+  font-size: rem(10);
+}

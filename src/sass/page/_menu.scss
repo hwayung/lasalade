@@ -1,0 +1,39 @@
+.menu{
+  position: relative;
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  background-color:$color-primary;
+  @include mq(md) {
+  position: relative;
+  padding-top: rem(143);
+  padding-bottom: rem(140);
+  background-color:$color-primary;
+  }
+  &::after {
+    visibility: none;
+    @include mq(md){
+    content: '';
+    display: block;
+    background-color: $color-primary-dark;
+    left: 7.16%;
+    position: absolute;
+    z-index: 2;
+    top: 26%;
+    width: 88.9%;
+    height: 36.86%;
+  }
+  }
+  &__body {
+    position: relative;
+    margin-top: rem(30);
+    margin-left: rem(20);
+    margin-right: rem(20);
+    z-index: 10;
+    @include mq(md) {
+    position: relative;
+    margin-top: rem(143);
+    margin-left: rem(190);
+    z-index: 10;
+  }
+  }
+}

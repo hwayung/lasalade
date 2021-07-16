@@ -1,0 +1,160 @@
+.access{
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  background-color: $color-primary;
+  @include mq(md) {
+  padding-top: rem(130);
+  padding-bottom: rem(140);
+  background-color: $color-primary;
+  }
+  &__img {
+    padding: rem(30) rem(21) 0 0;
+    position:relative;
+    z-index: 10;
+    @include mq(md) {
+    padding: rem(143) rem(80) 0 0;
+    position:relative;
+    z-index: 10;
+   }
+  }
+  &__img::after {
+      z-index: -1;
+      position: absolute;
+      top: 44%;
+      left: 40.1%;
+      z-index:-10;
+      width: 59.86%;
+      height:67.5%;
+      display: block;
+      content: "";
+      background-color:$color-primary-dark;
+  }
+  
+  
+  &__information {
+    margin-top: rem(24);
+    padding-left:5.3%;
+    display: block;
+    @include mq(md){
+    margin-top: rem(97);
+    padding-left:17%;
+    display: flex;
+  }
+    &-text{
+      wodth: 100%;
+      @include mq(md){
+      width: 22.6%;
+     }
+    }
+  }
+  &__map {
+  max-width: rem(1440);
+  position: relative;
+  max-width: 1600px;
+  width: 100%;
+  padding-top: 44.38%; /* = height ÷ width × 100 */
+  margin-top: rem(140);
+ }
+}
+.heading-primary__access {
+  visibility: hidden;
+  @include mq(md) {
+    visibility: visible;
+  }
+}
+
+.heading-primary{
+  font-size: rem(28);
+  line-height: 1.07;
+  margin-top: rem(33);
+  color: $color-text;
+  padding-left: rem(16);
+  padding-right: rem(16);
+  position: relative;
+  &::before {
+    display: block;
+    font-family: "Shippori Mincho" serif ;
+    color: $color-secondary;
+    position: absolute;
+    line-height: 0;
+    top: 50%;
+    left: 0;
+    content: "“";
+  }
+  &::after {
+    display: block;
+    position: absolute;
+    height: rem(1);
+    width: rem(56);
+    content: "";
+    border-top: $color-secondary 1px solid;
+    top: rem(126);
+    left: rem(16);
+  }
+  &__sub{
+    color: $color-text;
+    font-size: rem(12);
+    line-height: 1.2;
+    padding-left: rem(16);
+  }
+}
+
+.adress {
+  margin-left: rem(20);
+  width: 100%;
+  @include mq(md) {
+  margin-left: rem(283);
+  width: 22.8%;
+}
+  &__title {
+    margin-bottom: rem(39);
+    font-size: rem(14);
+    color: #00281F;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(26);
+  }
+}
+
+.item{
+  &__heading {
+    font-size: rem(9);
+    color:#202020;
+  }
+  &__body {
+    width: 68.4%;
+    font-size: rem(14);
+    color: #202020;
+  }
+  &__adress {
+    margin-top: rem(8);
+    color: #202020;
+  }
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 50%;                        
+  transform: translate(-50%, 0);
+  height: 100%;
+  width: 100%;
+}
+
+.mapframe{
+  padding-left:16.87%;
+  padding-right: 16.87%;
+}
+
+
+
+.card__img-access {
+  z-index: 10;
+}
+
+
+
+

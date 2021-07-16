@@ -1,0 +1,15 @@
+/* FontFamily */
+$base-font-family: "Shippori Mincho" serif;
+$second-font-family: "Libre Baskerville", serif;
+
+
+body {
+  font-family:"Libre Baskerville","Shippori Mincho","MS Mincho","Times New Roman", serif;
+
+  line-height: 1.8;
+}
+
+/* font-weight */
+$regular: 300;
+$normal: 400;
+$bold: 700;

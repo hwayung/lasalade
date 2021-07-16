@@ -1,0 +1,62 @@
+.menucard{ 
+  width: 100%;
+  @include mq(md) {
+  width: 38.3%;
+}
+  &-wrapper {
+    display: block;
+    @include mq(md) {
+    display: flex;
+    -webkit-flex-wrap: wrap;          /* Safari etc. */
+    -ms-flex-wrap    : wrap;          /* IE10        */
+    flex-wrap        : wrap;
+   }
+  }
+  &-outside {
+    margin-right: 7.3%;
+    margin-bottom: rem(69);
+  }
+  &__body {
+    margin-top: rem(24);
+    @include mq(md) {
+    margin-top: rem(30);
+   }
+  }
+  &__title {
+    font-size: rem(20);
+    font-weight: bold;
+    color:#202020;
+    @include mq(md) {
+    font-size: rem(25);
+    font-weight: bold;
+    color:#202020;
+    }
+  }
+  &__price {
+    margin-top: rem(24);
+    font-size: rem(18);
+    display: flex;
+    justify-content: space-between;
+    color:#202020;
+    @include mq(md){
+    margin-top: rem(30);
+    font-size: rem(18);
+    display: flex;
+    justify-content: space-between;
+    color:#202020;
+   }
+  }
+  &__text{
+    margin-top: rem(16);
+    font-size: rem(15);
+    color:#202020;
+    @include mq(md) {
+    margin-top: rem(24);
+    font-size: rem(15);
+    color:#202020;
+  }
+  }
+  &__btc{
+    max-width: rem(380);
+  }
+}

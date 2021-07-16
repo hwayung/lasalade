@@ -1,0 +1,32 @@
+.header{
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100vw;
+  height: rem(60);
+  transition: all .5s;
+  @include mq(md) {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    transition: all .5s;
+    height: rem(120);
+  }
+
+
+&__logo {
+  z-index: 100;
+  width: rem(60);
+  height: rem(48);
+  @include mq(md) {
+  width: rem(150);
+  height: rem(120);
+  }
+}
+
+}

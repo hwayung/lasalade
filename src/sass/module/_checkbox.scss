@@ -1,0 +1,57 @@
+.checkbox {
+  display: block;
+  position: relative;
+  margin: 0 0 rem(44) rem(177);
+  font-size: rem(12);
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none; /* テキストの選択を防ぐ */
+}
+
+/* inputは非表示にする */
+.my-checkbox input {
+  display: none;
+}
+
+/* □ */
+.checkmark {
+  position: absolute;
+  top: rem(2); /* 上からの位置 */
+  left: 0;
+  height: 16px; /* 大きさ */
+  width: 16px; /* 大きさ */
+  border: solid 2px rgba(123, 137, 91, 0.7); /* 線 */
+  border-radius: rem(3);
+  box-sizing: border-box;
+}
+
+/* ✓ */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  left: 3px; /* チェックの位置 */
+  top: 0.5px; /* チェックの位置 */
+  width: 6px; /* チェックの大きさ */
+  height: 10px; /* チェックの大きさ */
+  border: solid #00281f;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0; /* 透明にしておく */
+}
+
+/* チェックが入ったときの□ */
+.checkbox input:checked + .checkmark {
+  background: #ffffff; /* チェック時の色 */
+  border-color: $color-btn; /* チェック時の色 */
+}
+
+/* チェックが入ったときの✓ */
+.checkbox input:checked + .checkmark:after {
+  opacity: 1; /* 透明を解除 */
+}
+
+.privacy-text{
+  width: rem(120);
+  border-bottom: solid rem(1) #00281F;
+  padding-bottom: rem(2);
+}

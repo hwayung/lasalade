@@ -1,0 +1,166 @@
+.mainview {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:$color-text;
+  background-image: url(../../src/img/sptop.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 31vh;
+  @include mq(md) {
+  background-image: url(../../src/img/topimage.png);
+  height: 92.2vh;
+}
+
+  &__inner {
+    text-align: left;
+    position: absolute;
+    top: 8.8%;
+    padding: rem(16) rem(22);
+    background-color: rgba(255,255,255,0.5);
+    @include mq(md) {
+    text-align: left;
+    position: absolute;
+    top: 21.3%;
+    left: 46.8%;
+    padding: rem(30) rem(83) rem(35) rem(22);
+    text-align: left;
+    background-color: rgba(255,255,255,0.5);
+    }
+  }
+  &__title {
+    font-size: rem(24);
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    font-weight: bold;
+    color: $color-text;
+    @include mq(md) {
+    font-size: rem(45);
+    line-height: 1.36;
+    letter-spacing: 0.225em;
+    font-weight: bold;
+    color: $color-text;
+    }
+  }
+  &__secondtitle {
+    color: $color-secondary;
+    margin-bottom: rem(3);
+    @include mq(md) {
+      font-size: rem(16);
+      line-height: 1.875;
+      letter-spacing: 0.14em;
+      color: $color-secondary;
+      margin-bottom: rem(10);
+      font-weight: bold;
+    }
+  }
+  &__subtitle{
+      line-height: 2;
+      color: $color-secondary;
+    @include mq(md) {
+      font-size: rem(24);
+      line-height: 1.666;
+      letter-spacing: 0.14em;
+      color: $color-secondary;
+      margin-top: rem(23);
+      font-weight: bold;
+    }
+  }
+
+  &__scroll {
+    position: absolute;
+    padding: rem(10) rem(10) rem(50);
+    right: rem(5);
+    bottom: rem(72);
+    line-height: 1;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    text-decoration: none;
+    letter-spacing: .2em;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    color:$color-secondary;
+    font-size: rem(12);
+    @include mq(md) {
+      font-size: rem(12);
+      -ms-writing-mode: tb-rl;
+      position: absolute;
+      right: rem(5);
+      bottom: rem(72);
+      padding: rem(10) rem(10) rem(50);
+    }
+  }
+  &__scroll::after {
+    position: absolute;
+    left: 50%;
+    margin-top: rem(7);
+    width: rem(1);
+    height: rem(38);
+    content: "";
+    animation: scrollDownLine 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+    background-color: $color-secondary;
+    @include mq(md) {
+      height: rem(38);
+      margin-top: rem(7);
+    }
+  }
+
+
+@keyframes scrollDownLine {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
+}
+
+
+
+}
+
+.marque {
+  padding-left: rem(0);
+  padding-right: rem(16);
+  position: relative;
+  @include mq(md) {
+  padding-left: rem(16);
+  padding-right: rem(16);
+  position: relative;
+  }
+  &::before, &::after {
+    display: block;
+    font-family: "Shippori Mincho" serif ;
+    color: $color-secondary;
+    position: absolute;
+    line-height: 0;
+  }
+  &::before {
+    top: 50%;
+    left: -16px;
+    content: "“";
+    @include mq(md) {
+    top: 50%;
+    left: 0;
+    content: "“";
+  }
+  }
+  &::after {
+    content: "”";
+    top: 50%;
+    right: 0;
+  }
+}
