@@ -3,6 +3,7 @@
   padding-bottom: rem(60);
   background-color: $color-primary;
   @include mq(md) {
+  max-width: 1600px;
   padding-top: rem(130);
   padding-bottom: rem(140);
   background-color: $color-primary;
@@ -53,7 +54,15 @@
   max-width: 1600px;
   width: 100%;
   padding-top: 44.38%; /* = height ÷ width × 100 */
+  margin-top: 0;
+  @include mq(md) {
+  max-width: rem(1440);
+  position: relative;
+  max-width: 1600px;
+  width: 100%;
+  padding-top: 44.38%; /* = height ÷ width × 100 */
   margin-top: rem(140);
+  }
  }
 }
 .heading-primary__access {
@@ -64,6 +73,16 @@
 }
 
 .heading-primary{
+    font-size: rem(24);
+    line-height: 1;
+    margin-top: 0;
+    color: #00281f;
+    padding-left: 16px;
+    padding-left: 1rem;
+    padding-right: 16px;
+    padding-right: 1rem;
+    position: relative;
+  @include mq(md) {
   font-size: rem(28);
   line-height: 1.07;
   margin-top: rem(33);
@@ -71,6 +90,7 @@
   padding-left: rem(16);
   padding-right: rem(16);
   position: relative;
+  }
   &::before {
     display: block;
     font-family: "Shippori Mincho" serif ;
@@ -92,24 +112,37 @@
     left: rem(16);
   }
   &__sub{
-    color: $color-text;
+    padding-left: 0;
+    border-bottom:$color-secondary 1px solid;
+    width: 126px;
+    @include mq(md) {
+    color:  #00281f;
     font-size: rem(12);
     line-height: 1.2;
     padding-left: rem(16);
+    border-bottom:transparent;
+    }
   }
 }
 
 .adress {
-  margin-left: rem(20);
+  margin-left: 0;
+  margin-bottom: 35px;
   width: 100%;
   @include mq(md) {
   margin-left: rem(283);
   width: 22.8%;
 }
   &__title {
+    margin-bottom: rem(32);
+    font-size: rem(20);
+    color: #00281F;
+    font-weight: bold;
+    @include mq(md) {
     margin-bottom: rem(39);
     font-size: rem(14);
     color: #00281F;
+   }
   }
   &__item {
     display: flex;
@@ -145,8 +178,11 @@ iframe {
 }
 
 .mapframe{
+  padding: 0;
+  @include mq(md) {
   padding-left:16.87%;
   padding-right: 16.87%;
+ }
 }
 
 

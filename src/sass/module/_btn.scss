@@ -1,7 +1,10 @@
 .btn {
   max-width: rem(270);
+  margin-left: 0;
+  @include mq(md) {
+  max-width: rem(270);
   margin-left: 30.517%;;
-
+ }
 &-inside {
   display: flex;
   justify-content: center;

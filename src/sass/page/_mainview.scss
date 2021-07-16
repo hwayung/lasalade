@@ -12,6 +12,7 @@
   @include mq(md) {
   background-image: url(../../src/img/topimage.png);
   height: 92.2vh;
+  max-width: 1600px;
 }
 
   &__inner {
@@ -71,9 +72,9 @@
 
   &__scroll {
     position: absolute;
-    padding: rem(10) rem(10) rem(50);
-    right: rem(5);
-    bottom: rem(72);
+    padding: rem(10) rem(8) rem(50);
+    right: 0;
+    bottom: rem(560);
     line-height: 1;
     display: inline-block;
     overflow: hidden;
@@ -153,7 +154,7 @@
     left: -16px;
     content: "“";
     @include mq(md) {
-    top: 50%;
+    top: 36%;
     left: 0;
     content: "“";
   }
@@ -162,5 +163,10 @@
     content: "”";
     top: 50%;
     right: 0;
+    @include mq(md) {
+      top: 36%;
+      right: 0;
+      content: "”";
+    }
   }
 }

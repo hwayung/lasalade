@@ -1,11 +1,20 @@
 .checkbox {
   display: block;
   position: relative;
+  margin: 0 0 rem(30) 0;
+  font-size: rem(12);
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none; /* テキストの選択を防ぐ */
+  @include mq(md) {
+  display: block;
+  position: relative;
   margin: 0 0 rem(44) rem(177);
   font-size: rem(12);
   padding-left: 30px;
   cursor: pointer;
   user-select: none; /* テキストの選択を防ぐ */
+ }
 }
 
 /* inputは非表示にする */

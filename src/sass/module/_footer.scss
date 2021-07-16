@@ -1,15 +1,22 @@
 .footer {
   text-align: center;
-  padding: rem(65) rem(30) rem(20) ;
+  padding: rem(0) rem(20) rem(12) ;
   background-color: rgba(190,164,46,0.6);
   @include mq(md) {
+    max-width: 1600px;
     padding: rem(65) rem(30) rem(56);
   }
   &__logo {
+    width: 35.4%;
+    margin: 0 auto;
+    @include mq(md) {
     width: rem(465);
     margin: 0 auto;
+   }
   }
   &__text {
+    color: #ffffff;
+    font-size: rem(10);
     @include mq(md) {
     font-size: rem(14);
     color: #ffffff;
@@ -25,8 +32,11 @@
   justify-content: center;
   align-items: center;
   &__list {
+    display: flex;
+    margin-left: rem(31);
     @include mq(md){
     display: flex;
+    margin-left: 0;
     text-decoration:none;
     transition:.5s;
     align-items: center;
@@ -67,9 +77,9 @@
 
 
 .copyright {
-  margin-top: rem(30);
+  margin-top: rem(14);
   text-align: center;
-  font-size: rem(10);
+  font-size: rem(8);
   font-family:"Libre Baskerville";
   letter-spacing: 0.05em;
   @include mq(md) {
