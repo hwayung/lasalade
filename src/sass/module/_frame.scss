@@ -9,6 +9,8 @@
     max-width: rem(1064);
   }
   &--xl {
+    @include mq(md) {
     max-width:rem(1250);
+   }
   }
 }

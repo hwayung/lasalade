@@ -64,3 +64,10 @@
   }
   }
 }
+
+.title__concept {
+  @include mq(md) {
+    padding-left: 0;
+    margin-bottom: rem(143);
+  }
+}

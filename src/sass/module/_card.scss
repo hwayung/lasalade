@@ -1,4 +1,7 @@
 .card{
+  @include mq(md) {
+    width: 56.2%;
+  }
   &__img {
     max-width: 100%;
     vertical-align: bottom;
@@ -6,7 +9,7 @@
     &-wrapper {
       width: 100%;
       @include mq(md) {
-      width: 648px;
+      width: 100%;
     }
     }
   &-bc{
@@ -44,7 +47,7 @@
   &-first{
     margin-right: 0;
     @include mq(md) {
-    margin-right: rem(396);
+    margin-right: 0;
     }
   }
   &-reverse {
@@ -54,8 +57,8 @@
     @include mq(md) {
     flex-direction:row-reverse;
     margin-top: rem(59);
-    margin-left: rem(73);
-    margin-right: rem(280);
+    margin-left: 0;
+    margin-right: 0;
   }
   }
   &-third{
@@ -63,7 +66,7 @@
     margin-right: 0;
     @include mq(md) {
     margin-top: rem(51);
-    margin-right: rem(509);
+    margin-right: 0;
     }
   }
 }
